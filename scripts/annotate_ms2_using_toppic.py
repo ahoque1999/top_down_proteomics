@@ -44,7 +44,11 @@ with open (ms2_file_name, 'r') as file:
             search_result = re.search(regex_pattern, line)  
             # store peaks
             if search_result:
-                new_line = f"{line.split()[0]}\t{line.split()[1]}\n"
+                line_split = line.split()
+                if len(line_split) == 3:
+                    new_line = f"{line_split[0]}\t{line_split[1]}\t?^{line_split[2]}\n"
+                else:
+                    new_line = f"{line_split[0]}\t{line_split[1]}\t?\n"
                 # add each peak information into the previously generated new list
                 lines[id_count].append(new_line)
         

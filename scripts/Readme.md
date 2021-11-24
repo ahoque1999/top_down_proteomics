@@ -41,3 +41,11 @@ using annotations from the TopPIC file and peaks from ms2 file
 uses scan number as master key for merging
 ```
 
+annotated_20140926_F_EV_Sisl-SAX-fr3_ETD6_ms2_using_extracted_ETD-TopPIC.pepidx,
+annotated_20140926_F_EV_Sisl-SAX-fr3_ETD6_ms2_using_extracted_ETD-TopPIC.spidx,
+annotated_20140926_F_EV_Sisl-SAX-fr3_ETD6_ms2_using_extracted_ETD-TopPIC.splib,
+annotated_20140926_F_EV_Sisl-SAX-fr3_ETD6_ms2_using_extracted_ETD-TopPIC.sptxt,
+spectrast.log
+```
+spectrast -cIEThcD annotated_20140926_F_EV_Sisl-SAX-fr3_ETD6_ms2_using_extracted_ETD-TopPIC.msp
+```
